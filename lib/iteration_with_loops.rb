@@ -15,16 +15,20 @@ def find_min_in_nested_arrays(src)
   row_index = 0
   while row_index < src.count do
     element_index = 0
-    min_in_nested_array = ""
+    min_in_nested_array = []
 
     while element_index < array_of_daily_temperatures[row_index].count do
+      
       if array_of_daily_temperatures[row_index][element_index].count > min_in_nested_array.count
         min_in_nested_array = array_of_daily_temperatures[row_index][element_index]
+        
       end
       element_index += 1
+      
     end
     outer_results << min_in_nested_array
  row_index += 1
+ 
 end
 
 
