@@ -18,10 +18,10 @@ array_of_daily_temperatures = [
     element_index = 0
     min_in_nested_array = []
 
-    while element_index < array_of_daily_temperatures[row_index].count do
+    while element_index < src[row_index].count do
 
-      if array_of_daily_temperatures[row_index][element_index].count > min_in_nested_array.min
-        min_in_nested_array = array_of_daily_temperatures[row_index][element_index]
+      if src[row_index][element_index].count > min_in_nested_array.min
+        min_in_nested_array = src[row_index][element_index]
 
       end
       element_index += 1
